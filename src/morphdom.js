@@ -261,7 +261,7 @@ export default function morphdomFactory(morphAttrs) {
                                                 if (curFromNodeKey) {
                                                     // Since the node is keyed it might be matched up later so we defer
                                                     // the actual removal to later
-                                                    addKeyedRemoval(curFromNodeKey, {});
+                                                    addKeyedRemoval(curFromNodeKey, curFromNodeChild);
                                                 } else {
                                                     // NOTE: we skip nested keyed nodes from being removed since there is
                                                     //       still a chance they will be matched up later
